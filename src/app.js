@@ -8,7 +8,7 @@ const app = express();
 const publicDirectoryPath = path.join(__dirname, '../public');
 // Default path is in the views folder
 const viewsPath = path.join(__dirname, '../templates/views');
-const partialsPath = path.join(__dirname, '../templates/partials');
+// const partialsPath = path.join(__dirname, '../templates/partials');
 
 // Setup handlebars engine and views location
 app.set('view engine', 'ejs');
