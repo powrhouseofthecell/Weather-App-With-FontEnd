@@ -10,19 +10,11 @@
 
    <body>
       <div class="main-content">
-         <header>
-            <h1><%=title%></h1>
-
-            <a href="/">Weather</a>
-            <a href="/about">About</a>
-            <a href="/help">Help</a>
-         </header>
+         <%- include('../partials/header'); %>
 
          <p>Use this site to get your weather!</p>
       </div>
 
-      <footer>
-         <p>Created by <%=name%></p>
-      </footer>
+      <%- include('../partials/footer'); %>
    </body>
 </html>
