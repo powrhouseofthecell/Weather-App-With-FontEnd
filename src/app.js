@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const getWeather = require('./utils/open-weather');
 // import weather from './utils/open-weather.js';
-dotenv.config();
+require('dotenv').config();
 const app = express();
 
 // Define paths for Express config
@@ -50,13 +50,19 @@ app.get('/weather', (req, res) => {
    }
    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.API_KEY}`;
    getWeather(url, (data) => {
-      res.send(data);
+      const des = `${data.weather[0].description}`;
+      const humidity = `${data.main.humidity}`;
+      const clouds = `${data.clouds.all}`;
+      const country = `${data.sys.country}`;
+      const tmp = `${Math.round(data.main.temp - 273.15)} °C `;
+      res.send({
+         des,
+         humidity,
+         clouds,
+         country,
+         tmp,
+      });
    });
-
-   // res.send({
-   //    forecast: 'It is not snowing',
-   //    location: 'Kashmir',
-   // });
 });
 
 app.get('/help/*', (req, res) => {
