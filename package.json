@@ -1,8 +1,8 @@
 {
    "name": "weather-app",
    "version": "1.0.0",
-   "description": "-  _Adding Front-End_",
-   "main": "index.js",
+   "description": "",
+   "main": "src/app.js",
    "scripts": {
       "start": "src/app.js"
    },
