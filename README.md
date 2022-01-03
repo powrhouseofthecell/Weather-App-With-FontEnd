@@ -2,10 +2,12 @@
 
 ###### Changes that will be added:
 
--  _Adding Front-End_
+-  _Adding Front-End_ ✔
 
--  _Add routes_
+-  _Add routes_ ✔
 
--  _Adding templates_
+-  _Adding templates_ ✔
 
--  _Integrating with the API_
+-  _Integrating with the API_ ✔
+
+-  _Error Handling_ ❌
