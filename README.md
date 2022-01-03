@@ -6,4 +6,4 @@
 
 -  _Add routes_
 
--  _Adding templates_
+-  _Integrating with the API_
