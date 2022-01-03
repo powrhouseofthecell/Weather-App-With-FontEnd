@@ -54,7 +54,7 @@ app.get('/weather', (req, res) => {
       const humidity = `${data.main.humidity}`;
       const clouds = `${data.clouds.all}`;
       const country = `${data.sys.country}`;
-      const tmp = `${Math.round(data.main.temp - 273.15)} °C `;
+      const tmp = `${Math.round(data.main.temp - 273.15)}°C `;
       res.send({
          des,
          humidity,
@@ -68,7 +68,7 @@ app.get('/weather', (req, res) => {
 app.get('/help/*', (req, res) => {
    res.render('404', {
       title: '404',
-      name: 'Andrew Mead',
+      name: 'Zuhaib Nazir',
       errorMessage: 'Help article not found.',
    });
 });
@@ -76,7 +76,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
    res.render('404', {
       title: '404',
-      name: 'Andrew Mead',
+      name: 'Zuhaib Nazir',
       errorMessage: 'Page not found.',
    });
 });
