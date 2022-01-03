@@ -4,7 +4,7 @@ const getWeather = require('./utils/open-weather');
 // import weather from './utils/open-weather.js';
 require('dotenv').config();
 const app = express();
-
+const port = process.env.PORT || 3000;
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public');
 // Default path is in the views folder
@@ -81,6 +81,6 @@ app.get('*', (req, res) => {
    });
 });
 
-app.listen(3000, () => {
-   console.log('Server is up on port 3000.');
+app.listen(port, () => {
+   console.log('Server is up on port ' + port);
 });
