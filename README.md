@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> A weather app
+> A weather app made with open weather API with Express JS
 
 ### 🏠 [Homepage](https://github.com/powrhouseofthecell/Weather-App-With-FontEnd#readme)
 
